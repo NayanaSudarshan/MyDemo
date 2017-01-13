@@ -7,16 +7,23 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
-
+@synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    ViewController * controller = [[[ViewController alloc] init] autorelease];
+    UINavigationController * navigationController = [[[UINavigationController alloc] initWithRootViewController:controller] autorelease];
+    _window.rootViewController = navigationController;
+    [_window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -40,6 +47,11 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)dealloc {
+    [_window release];
+    [super dealloc];
 }
 
 @end
