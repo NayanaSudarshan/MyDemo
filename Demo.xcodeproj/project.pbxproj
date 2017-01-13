@@ -13,10 +13,14 @@
 		758DBCB11E24EAC000DD38F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758DBCAF1E24EAC000DD38F8 /* Main.storyboard */; };
 		758DBCB31E24EAC000DD38F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758DBCB21E24EAC000DD38F8 /* Assets.xcassets */; };
 		758DBCB61E24EAC000DD38F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758DBCB41E24EAC000DD38F8 /* LaunchScreen.storyboard */; };
+		75A4C6571E28DA5B0060C6A5 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A4C6561E28DA5B0060C6A5 /* CustomTableViewCell.m */; };
+		75ADB5831E262B1D00E3C8A1 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 75ADB5821E262B1D00E3C8A1 /* default.png */; };
+		75FAAA7D1E25E61F0039625E /* CanadaDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FAAA7C1E25E61F0039625E /* CanadaDetails.m */; };
+		75FAAA801E25E6CE0039625E /* DataUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FAAA7F1E25E6CE0039625E /* DataUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		758DBCA31E24EABF00DD38F8 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		758DBCA31E24EABF00DD38F8 /* Canada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		758DBCA71E24EABF00DD38F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		758DBCA91E24EABF00DD38F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		758DBCAA1E24EABF00DD38F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +30,13 @@
 		758DBCB21E24EAC000DD38F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		758DBCB51E24EAC000DD38F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		758DBCB71E24EAC000DD38F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75A4C6551E28DA5B0060C6A5 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		75A4C6561E28DA5B0060C6A5 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		75ADB5821E262B1D00E3C8A1 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		75FAAA7B1E25E61F0039625E /* CanadaDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanadaDetails.h; sourceTree = "<group>"; };
+		75FAAA7C1E25E61F0039625E /* CanadaDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanadaDetails.m; sourceTree = "<group>"; };
+		75FAAA7E1E25E6CE0039625E /* DataUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUtility.h; sourceTree = "<group>"; };
+		75FAAA7F1E25E6CE0039625E /* DataUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +61,7 @@
 		758DBCA41E24EABF00DD38F8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				758DBCA31E24EABF00DD38F8 /* Demo.app */,
+				758DBCA31E24EABF00DD38F8 /* Canada.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,10 +69,13 @@
 		758DBCA51E24EABF00DD38F8 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				75A4C6581E28E2310060C6A5 /* View */,
+				75A4C64F1E2756600060C6A5 /* Model */,
+				75A4C64E1E2756460060C6A5 /* Controller */,
+				75A4C6501E2756650060C6A5 /* Utility */,
 				758DBCA91E24EABF00DD38F8 /* AppDelegate.h */,
 				758DBCAA1E24EABF00DD38F8 /* AppDelegate.m */,
-				758DBCAC1E24EABF00DD38F8 /* ViewController.h */,
-				758DBCAD1E24EABF00DD38F8 /* ViewController.m */,
+				75ADB5821E262B1D00E3C8A1 /* default.png */,
 				758DBCAF1E24EAC000DD38F8 /* Main.storyboard */,
 				758DBCB21E24EAC000DD38F8 /* Assets.xcassets */,
 				758DBCB41E24EAC000DD38F8 /* LaunchScreen.storyboard */,
@@ -77,6 +91,42 @@
 				758DBCA71E24EABF00DD38F8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75A4C64E1E2756460060C6A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				758DBCAC1E24EABF00DD38F8 /* ViewController.h */,
+				758DBCAD1E24EABF00DD38F8 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		75A4C64F1E2756600060C6A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75FAAA7B1E25E61F0039625E /* CanadaDetails.h */,
+				75FAAA7C1E25E61F0039625E /* CanadaDetails.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		75A4C6501E2756650060C6A5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				75FAAA7E1E25E6CE0039625E /* DataUtility.h */,
+				75FAAA7F1E25E6CE0039625E /* DataUtility.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		75A4C6581E28E2310060C6A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75A4C6551E28DA5B0060C6A5 /* CustomTableViewCell.h */,
+				75A4C6561E28DA5B0060C6A5 /* CustomTableViewCell.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +146,7 @@
 			);
 			name = Demo;
 			productName = Demo;
-			productReference = 758DBCA31E24EABF00DD38F8 /* Demo.app */;
+			productReference = 758DBCA31E24EABF00DD38F8 /* Canada.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,6 +189,7 @@
 				758DBCB61E24EAC000DD38F8 /* LaunchScreen.storyboard in Resources */,
 				758DBCB31E24EAC000DD38F8 /* Assets.xcassets in Resources */,
 				758DBCB11E24EAC000DD38F8 /* Main.storyboard in Resources */,
+				75ADB5831E262B1D00E3C8A1 /* default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75FAAA801E25E6CE0039625E /* DataUtility.m in Sources */,
+				75FAAA7D1E25E61F0039625E /* CanadaDetails.m in Sources */,
+				75A4C6571E28DA5B0060C6A5 /* CustomTableViewCell.m in Sources */,
 				758DBCAE1E24EABF00DD38F8 /* ViewController.m in Sources */,
 				758DBCAB1E24EABF00DD38F8 /* AppDelegate.m in Sources */,
 				758DBCA81E24EABF00DD38F8 /* main.m in Sources */,
@@ -263,10 +317,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Demo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Canada;
 			};
 			name = Debug;
 		};
@@ -274,10 +330,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Demo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Canada;
 			};
 			name = Release;
 		};
@@ -300,6 +358,7 @@
 				758DBCBC1E24EAC000DD38F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
